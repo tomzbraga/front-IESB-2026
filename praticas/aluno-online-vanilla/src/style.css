@@ -94,7 +94,7 @@ header > h1 {
     padding: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     main {
       border: 1px solid var(--cor-primaria);
