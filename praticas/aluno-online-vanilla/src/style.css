@@ -1,5 +1,5 @@
 * {
-    margin: 8px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -80,16 +80,21 @@ header > h1 {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
+    margin-top: 18px;
 }
 
 .dashboard > h3 {
-    padding: 8px;
+    padding: 12px;
     width: 100%;
     background-color: var(--cor-fundo);
     margin: 0;
 }
 
-@media (min-width: 1024px) {
+.dashboard > p {
+    padding: 12px;
+}
+
+@media (min-width: 768px) {
 
     main {
       border: 1px solid var(--cor-primaria);
@@ -105,25 +110,37 @@ header > h1 {
       
     }
     
-      main {
-        flex: 2;
-        max-width: 800px;
-        margin: 32px;
+    main {
+        flex: 5;
+        max-width: 1000px;
+        margin: 16px;
       
     }
     
-      aside {
+    aside {
         flex: 1;
-        max-width: 400px;
-        margin: 32px;
         border: 1px solid var(--cor-primaria);
-        border-radius: 8px;
-        background-color: white;
-        padding: 16px;
+        background-color: var(--cor-fundo);
+        padding: 8px;
       
     }
+
+    aside > header {
+        justify-content: flex-start;
+        
+    }
     
-      .desktop {
+    ul {
+        margin: 18px;
+        padding: 18px;
+    }
+
+    li {
+        padding: 16px;
+    
+    }
+    
+    .desktop {
         display: block;
       
     }
