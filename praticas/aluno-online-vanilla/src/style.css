@@ -16,7 +16,7 @@
 body {
     display: flex;
     height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 main {
@@ -108,13 +108,13 @@ aside {
       border: 1px solid var(--cor-primaria);
       margin: 12px auto;
       max-width: 1000px;
+      align-items: center;
     }
 
     body {
         flex-direction: row;
         justify-content: center;
         background-color: #f5f5f5;
-      
     }
     
     aside {
