@@ -5,7 +5,7 @@ const matricula = document.querySelector('#matricula');
 const senha     = document.querySelector('#senha');
 const botao     = document.querySelector('button');
 
-botao.addEventListener('click', function(e) {
+botao.addEventListener('click', function() {
 
     const matriculaErro = document.querySelector("#matriculaErro");
     const senhaErro     = document.querySelector("#senhaErro");
