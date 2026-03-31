@@ -110,7 +110,7 @@ aside {
       max-width: 85%;
     }
 
-    .mainLogin {
+    .main-Login{
       flex: 5;
       border: 1px solid var(--cor-primaria);
       margin: 12px auto;
