@@ -3,7 +3,7 @@ function Menu() {
     
     return (
 
-        <nav>
+    <nav>
     
         <ul>
           <li>Dashboard</li>
