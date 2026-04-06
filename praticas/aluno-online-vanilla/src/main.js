@@ -13,30 +13,34 @@ botao.addEventListener('click', function() {
     matriculaErro.textContent = '';
     senhaErro.textContent = '';
 
-    let valido = true;
+    let valido = false;
 
     if (matricula.value == '') {
         matriculaErro.textContent = "Matricula é obrigatória";
-        valido = false;
+        //valido = false;
         return;
     }
 
     if (parseInt(matricula.value) <= 0) {
         matriculaErro.textContent = "Matrícula inválida";
-        valido = false;
+        //valido = false;
         return;
     }
 
     if (senha.value == '') {
         senhaErro.textContent = "Senha é obrigatória";
-        valido = false;
+        //valido = false;
         return;
     }
 
     if (senha.value.length < 8) {
         senhaErro.textContent = "Senha deve conter no mínimo 8 caracteres";
-        valido = false;
+        //valido = false;
         return;
+    }
+
+    else {
+        valido = true;
     }
 
     if (valido) {
