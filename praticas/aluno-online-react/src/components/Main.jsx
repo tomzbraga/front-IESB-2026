@@ -5,7 +5,7 @@ function Main() {
 
     return ( 
     
-    <main className="flex flex-col max-w-screen">
+    <main className="flex flex-col w-full">
         
         <Topbar />
            
