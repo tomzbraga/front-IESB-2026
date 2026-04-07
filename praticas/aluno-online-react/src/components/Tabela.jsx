@@ -22,7 +22,7 @@ function Tabela(props) {
                         {props.colunas.map((item, index) =>
                         (   
                         
-                            <th className="text-left" key={index}>{item}</th>
+                            <th className="text-left p-2" key={index}>{item}</th>
                 
                         ))}
                     
