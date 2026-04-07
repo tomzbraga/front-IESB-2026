@@ -1,16 +1,23 @@
 import Topbar from "./Topbar";
 import Card from "./Card";
 
-function Main() {
+function Main(props) {
 
     return ( 
     
     <main className="flex flex-col w-full">
         
-        <Topbar />
+        <Topbar titulo={props.titulo}/>
            
-        <Card />
-    
+           <h2>{props.subtitulo}</h2>
+        
+        <section>
+            
+            {props.children}
+        
+        </section>
+
+
     </main>
         
 );
