@@ -4,13 +4,18 @@ function Topbar(props) {
 
     return (
     
-    <header className='flex justify-between m-4 mt-8 items-center'>
+    <main className='m-4 mt-8'>
+    
+        <header className='flex justify-between items-center'>
         
-        <h1 className='font-bold'>{props.titulo}</h1>
-        <img src={avatar} alt="imagem do avatar" />
+            <h1 className='font-bold'>{props.titulo}</h1>
+            <img src={avatar} alt="imagem do avatar" />
         
-    </header>
+        </header>
 
+        <h2 className='mt-8 flex justify-between items-center font-bold'>{props.subtitulo}</h2>
+
+    </main>
     );
 
 }

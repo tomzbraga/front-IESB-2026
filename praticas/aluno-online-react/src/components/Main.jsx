@@ -7,9 +7,12 @@ function Main(props) {
     
     <main className="flex flex-col w-full">
         
-        <Topbar titulo={props.titulo}/>
-           
-           <h2>{props.subtitulo}</h2>
+        <Topbar 
+            
+            titulo={props.titulo}
+            subtitulo={props.subtitulo}
+        
+        />
         
         <section>
             

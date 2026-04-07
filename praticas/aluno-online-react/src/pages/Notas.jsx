@@ -32,25 +32,23 @@ function Notas() {
     ],
     [
 
-        ["Enegenharia de Software", "5.5", "5.5", "5.5", "MM"],
-        ["Dispositivos Moveis", "5.5", "5.5", "5.5", "MM"],
-        ["Estatistica", "5.5", "5.5", "5.5", "MM"],
+        ["Enegenharia de Software", "10", "10", "10", "SS"],
+        ["Dispositivos Moveis", "10", "10", "10", "SS"],
+        ["Estatistica", "10", "10", "10", "SS"],
 
     ]
     ];
 
     return (
 
-        <>
+        <section className="flex h-screen">
         
         <Sidebar />
-        
-        <main>
 
             <Main 
             
                 titulo="Minhas Notas" 
-                subtitulo="Historico suas notas por semestre"
+                subtitulo="Historico de notas por semestre"
                 
             >
 
@@ -66,7 +64,7 @@ function Notas() {
                     
                     titulo="2025.2" 
                     colunas={colunas} 
-                    dados={Notas[0]}
+                    dados={Notas[1]}
                 
                 />
 
@@ -74,15 +72,13 @@ function Notas() {
                     
                     titulo="2025.1" 
                     colunas={colunas} 
-                    dados={Notas[0]}
+                    dados={Notas[2]}
                 
                 />
 
             </Main>
 
-        </main>
-
-        </>
+        </section>
 
     );
 

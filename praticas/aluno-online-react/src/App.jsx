@@ -6,18 +6,20 @@ import Notas from "./pages/Notas";
 import Requerimentos from "./pages/Requerimentos";
 
 function App() {
-  return (
-  <>
+  
+  const pagina = 2;
 
-    {/*<Dashboard /> */}
-    {/* <Faltas /> */}
-    {/* <Boletos /> */}
-    {/* <Requerimentos /> */}
-    <Notas />
+  switch (pagina) 
+  {
 
-  </>
+    case 1: return <Dashboard />;
+    case 2: return <Faltas />;
+    case 3: return <Notas />;
+    case 4: return <Requerimentos />;
+    case 5: return <Boletos />;
 
-  );
+  }
+
 }
 
 export default App;

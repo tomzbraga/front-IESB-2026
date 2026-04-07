@@ -24,7 +24,7 @@ function Dashboard() {
 
     return (
         
-        <section className="flex h-screen gap-4">
+        <section className="flex h-screen">
             
             <Sidebar />
             

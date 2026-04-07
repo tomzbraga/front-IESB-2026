@@ -1,23 +1,32 @@
 function Tabela(props) {
     return (
-        
-        <>
-        
-            {props.titulo && <h3>{props.titulo}</h3>}
+
+    <article className="m-4 border border-gray-300 rounded-lg shadow-md">
             
-            <table>
-            
-                <thead>
-                    <th>
+            <table className="w-full">
+
+                {props.titulo && (
+                
+                <caption className="bg-gray-200  p-4 font-bold text-left">
                     
-                        {props.colunas.map((Item, index) =>
+                    {props.titulo}
+                
+                </caption>
+
+                )}
+
+                <thead className="bg-gray-200 font-bold">
+                    
+                    <tr>
+                    
+                        {props.colunas.map((item, index) =>
                         (   
                         
-                            <td key={index}>{Item}</td>
+                            <th className="text-left" key={index}>{item}</th>
                 
                         ))}
                     
-                    </th>
+                    </tr>
                 
                 </thead>
     
@@ -31,7 +40,7 @@ function Tabela(props) {
                             {linha.map((coluna, j) => 
                             (
 
-                                <td key={j}>{coluna}</td>
+                                <td className="p-2 border border-gray-300" key={j}>{coluna} </td>
 
                             )
                             
@@ -42,8 +51,11 @@ function Tabela(props) {
                     ))}
     
                 </tbody>
+    
             </table>
-        </>
+    
+    </article>
+
     );
 
     
