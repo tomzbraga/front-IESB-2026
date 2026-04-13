@@ -8,7 +8,7 @@ function Topbar(props) {
     
         <header className='flex justify-between items-center'>
         
-            <h1 className='font-bold'>{props.titulo}</h1>
+            <h1 className='font-bold text-lg'>{props.titulo}</h1>
             <img src={avatar} alt="imagem do avatar" />
         
         </header>

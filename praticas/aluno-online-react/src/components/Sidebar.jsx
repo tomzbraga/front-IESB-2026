@@ -10,7 +10,7 @@ function Sidebar() {
             <header className='items-center flex gap-2 h-16'>
 
                 <img src={logo} alt="learn" />
-                <h1>Aluno Online</h1>
+                <h1 className='text-lg'>Aluno Online</h1>
 
             </header>
         
