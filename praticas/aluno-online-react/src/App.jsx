@@ -9,6 +9,8 @@ function App() {
   
   const pagina = 5;
 
+  //pratica4
+
   switch (pagina) 
   {
 
