@@ -2,7 +2,7 @@ import Main from "../components/Main.jsx"
 import Sidebar from "../components/Sidebar.jsx"
 import Tabela from "../components/Tabela.jsx"
 
-function Faltas() { 
+function Faltas(props) { 
 
     const colunas = 
     [
@@ -33,7 +33,7 @@ function Faltas() {
 
         <section className="flex h-screen">
             
-            <Sidebar />
+            <Sidebar navegaPara={props.navegaPara}/>
             
             <Main 
 

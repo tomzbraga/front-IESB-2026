@@ -27,7 +27,7 @@ function FormLogin ({navegaPara}) {
         
         }
   
-        navegaPara();
+        navegaPara(1);
   
       }
 

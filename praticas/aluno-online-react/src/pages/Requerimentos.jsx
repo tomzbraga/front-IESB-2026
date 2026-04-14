@@ -2,7 +2,7 @@ import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
-function Requerimentos() {
+function Requerimentos(props) {
 
     const colunas = 
     [
@@ -29,7 +29,7 @@ function Requerimentos() {
 
         <section className="flex h-screen">
 
-        <Sidebar />
+        <Sidebar navegaPara={props.navegaPara}/>
 
         <Main 
         

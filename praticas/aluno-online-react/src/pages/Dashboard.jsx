@@ -2,7 +2,7 @@ import Card from "../components/Card.jsx";
 import Main from "../components/Main.jsx"
 import Sidebar from "../components/Sidebar.jsx"
 
-function Dashboard() { 
+function Dashboard(props) { 
 
     const avisos = 
     [
@@ -26,7 +26,7 @@ function Dashboard() {
         
         <section className="flex h-screen">
             
-            <Sidebar />
+            <Sidebar navegaPara={props.navegaPara}/>
             
             <Main 
             

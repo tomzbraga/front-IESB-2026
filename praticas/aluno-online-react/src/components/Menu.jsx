@@ -1,5 +1,5 @@
 
-function Menu() {
+function Menu({ navegaPara }) {
     
     return (
 

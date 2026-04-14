@@ -2,7 +2,7 @@ import Main from "../components/Main.jsx"
 import Sidebar from "../components/Sidebar.jsx"
 import Tabela from "../components/Tabela.jsx"
 
-function Boletos() {
+function Boletos(props) {
 
         const colunas = 
     [
@@ -37,7 +37,7 @@ function Boletos() {
 
         <section className="flex h-screen">
         
-        <Sidebar />
+        <Sidebar navegaPara={props.navegaPara}/>
 
         <Main 
         

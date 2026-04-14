@@ -3,7 +3,7 @@ import Topbar from "../components/Topbar";
 import Tabela from "../components/Tabela";
 import Main from "../components/Main";
 
-function Notas() {
+function Notas(props) {
 
     const colunas = 
     [
@@ -43,7 +43,7 @@ function Notas() {
 
         <section className="flex h-screen">
         
-        <Sidebar />
+        <Sidebar navegaPara={props.navegaPara}/>
 
             <Main 
             
