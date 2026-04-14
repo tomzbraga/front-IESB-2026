@@ -1,7 +1,7 @@
 import logo from '../assets/learn.svg';
 import Menu from './Menu';
 
-function Sidebar() {
+function Sidebar(props) {
 
     return (
 
@@ -14,7 +14,7 @@ function Sidebar() {
 
             </header>
         
-        <Menu />
+        <Menu navegaPara={props.navegaPara} />
         
         </aside>
     
