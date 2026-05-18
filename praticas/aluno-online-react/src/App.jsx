@@ -4,7 +4,9 @@ import Dashboard from "./pages/Dashboard";
 import Faltas from "./pages/Faltas";
 import Notas from "./pages/Notas";
 import Requerimentos from "./pages/Requerimentos";
+import Layout from "./Layouts/Layout";
 import Login from "./pages/Login";
+import Erro404 from "./pages/Erro404";
 import { useState } from "react";
 import { Routes, Route } from "react-router";
 
