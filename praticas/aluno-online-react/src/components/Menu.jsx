@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 function Menu() {
   return (
     <nav className="mt-12 px-7">
-      <ul>
+      <ul className="list-disc space-y-4 pl-5">
         <li>
           <NavLink to="/">Dashboard</NavLink>
         </li>

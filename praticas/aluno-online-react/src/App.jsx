@@ -11,17 +11,19 @@ import { useState } from "react";
 import { Routes, Route } from "react-router";
 
 function App() {
-  <Routes>
-    <Route element={<Layout />}>
-      <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/faltas" element={<Faltas />} />
-      <Route path="/boletos" element={<Boletos />} />
-      <Route path="/notas" element={<Notas />} />
-      <Route path="/requerimentos" element={<Requerimentos />} />
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/faltas" element={<Faltas />} />
+        <Route path="/boletos" element={<Boletos />} />
+        <Route path="/notas" element={<Notas />} />
+        <Route path="/requerimentos" element={<Requerimentos />} />
+      </Route>
       <Route path="*" element={<Erro404 />} />
-    </Route>
-  </Routes>;
+    </Routes>
+  );
 }
 
 export default App;
