@@ -8,7 +8,6 @@ function AuthProvider({ children }) {
 
   const login = (dados) => {
     // Chama a API do backend
-
     setUsuario({ nome: "Jose" });
     setLogado(true);
   };

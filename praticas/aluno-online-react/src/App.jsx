@@ -4,27 +4,26 @@ import Dashboard from "./pages/Dashboard";
 import Faltas from "./pages/Faltas";
 import Notas from "./pages/Notas";
 import Requerimentos from "./pages/Requerimentos";
-import Login from "./pages/Login"
+import Layout from "./Layouts/Layout";
+import Login from "./pages/Login";
+import Erro404 from "./pages/Erro404";
 import { useState } from "react";
+import { Routes, Route } from "react-router";
 
 function App() {
-  
-  const [pagina, setPagina] = useState(0);
-
-  //pratica4
-
-  switch (pagina) 
-  {
-
-    case 1:  return <Dashboard     navegaPara={setPagina}/>;
-    case 2:  return <Faltas        navegaPara={setPagina}/>;
-    case 3:  return <Notas         navegaPara={setPagina}/>;
-    case 4:  return <Requerimentos navegaPara={setPagina}/>;
-    case 5:  return <Boletos       navegaPara={setPagina}/>;
-    default: return <Login         navegaPara={setPagina}/>;
-
-  }
-
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/faltas" element={<Faltas />} />
+        <Route path="/boletos" element={<Boletos />} />
+        <Route path="/notas" element={<Notas />} />
+        <Route path="/requerimentos" element={<Requerimentos />} />
+      </Route>
+      <Route path="*" element={<Erro404 />} />
+    </Routes>
+  );
 }
 
 export default App;
