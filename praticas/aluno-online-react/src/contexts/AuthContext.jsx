@@ -7,9 +7,10 @@ function AuthProvider({ children }) {
   const [logado, setLogado] = useState(false);
 
   const login = (dados) => {
-    // Chama a API do backend
+
     setUsuario({ nome: "Jose" });
     setLogado(true);
+
   };
 
   const logout = () => {
