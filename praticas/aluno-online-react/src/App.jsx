@@ -8,7 +8,7 @@ import Layout from "./Layouts/Layout";
 import Login from "./pages/Login";
 import Erro404 from "./pages/Erro404";
 import { Routes, Route } from "react-router";
-import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
