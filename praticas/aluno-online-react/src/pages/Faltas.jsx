@@ -2,7 +2,7 @@ import Main from "../components/Main.jsx";
 import Sidebar from "../components/Sidebar.jsx";
 import Tabela from "../components/Tabela.jsx";
 
-function Faltas(props) {
+function Faltas() {
   const colunas = ["Disciplina", "Total de Faltas", "% de Presença"];
 
   const Faltas = [

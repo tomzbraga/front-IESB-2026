@@ -2,7 +2,7 @@ import Card from "../components/Card.jsx";
 import Main from "../components/Main.jsx";
 import Sidebar from "../components/Sidebar.jsx";
 
-function Dashboard(props) {
+function Dashboard() {
   const avisos = [
     "Eleição para representante de turma",
     "Inscrição para o projeto de extensão",

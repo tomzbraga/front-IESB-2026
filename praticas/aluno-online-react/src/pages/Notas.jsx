@@ -3,7 +3,7 @@ import Topbar from "../components/Topbar";
 import Tabela from "../components/Tabela";
 import Main from "../components/Main";
 
-function Notas(props) {
+function Notas() {
   const colunas = ["Disciplina", "P1", "P2", "P3", "Menção"];
 
   const Notas = [

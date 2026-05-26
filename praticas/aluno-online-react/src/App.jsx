@@ -7,12 +7,10 @@ import Requerimentos from "./pages/Requerimentos";
 import Layout from "./Layouts/Layout";
 import Login from "./pages/Login";
 import Erro404 from "./pages/Erro404";
-import { useState } from "react";
 import { Routes, Route } from "react-router";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 
 function App() {
-  const { logado } = useAuth();
   return (
     <Routes>
         <Route element={<Layout />}>
