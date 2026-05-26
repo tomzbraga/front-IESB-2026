@@ -1,11 +1,14 @@
 import { NavLink } from "react-router";
+import { useAuth } from "../contexts/AuthContext";
 
 function Menu() {
+  const { logout } = useAuth();
+
   return (
     <nav className="mt-12 px-7">
       <ul className="list-disc space-y-4 pl-5">
         <li>
-          <NavLink to="/">Dashboard</NavLink>
+          <NavLink to="/dashboard">Dashboard</NavLink>
         </li>
         <li>
           <NavLink to="/faltas">Faltas</NavLink>
@@ -20,7 +23,9 @@ function Menu() {
           <NavLink to="/requerimentos">Requerimentos</NavLink>
         </li>
         <li>
-          <NavLink to="/login">Sair</NavLink>
+          <NavLink onClick={logout} to="/">
+            Sair
+          </NavLink>
         </li>
       </ul>
     </nav>

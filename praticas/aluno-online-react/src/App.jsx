@@ -9,18 +9,20 @@ import Login from "./pages/Login";
 import Erro404 from "./pages/Erro404";
 import { useState } from "react";
 import { Routes, Route } from "react-router";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
 
 function App() {
+  const { logado } = useAuth();
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route element={<Layout />}>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/faltas" element={<Faltas />} />
-        <Route path="/boletos" element={<Boletos />} />
-        <Route path="/notas" element={<Notas />} />
-        <Route path="/requerimentos" element={<Requerimentos />} />
-      </Route>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/faltas" element={<Faltas />} />
+          <Route path="/boletos" element={<Boletos />} />
+          <Route path="/notas" element={<Notas />} />
+          <Route path="/requerimentos" element={<Requerimentos />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
       <Route path="*" element={<Erro404 />} />
     </Routes>
   );

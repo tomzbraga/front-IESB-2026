@@ -8,9 +8,9 @@ function AuthProvider({ children }) {
 
   const login = (dados) => {
 
-    setUsuario({ nome: "Jose" });
+    setUsuario({ dados });
     setLogado(true);
-
+    
   };
 
   const logout = () => {

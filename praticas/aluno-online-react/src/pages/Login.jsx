@@ -13,7 +13,7 @@ function Login(props) {
 
         <h1 className="font-bold text-2xl text-gray-800 mb-6">Aluno Online</h1>
 
-        <FormLogin navegaPara={props.navegaPara} />
+        <FormLogin />
       </div>
     </section>
   );

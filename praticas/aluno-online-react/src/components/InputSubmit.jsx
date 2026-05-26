@@ -1,6 +1,14 @@
-function InputSubmit({ texto }) {
+import { useNavigate } from "react-router";
+import { useAuth } from "../contexts/AuthContext";
+import FormLogin from "./FormLogin";
+
+function InputSubmit({ texto, onClick }) {
   return (
-    <button className="bg-gray-200 rounded-lg w-full p-2 mt-3" type="submit">
+    <button
+      onClick={onClick}
+      className="bg-gray-200 rounded-lg w-full p-2 mt-3"
+      type="button"
+    >
       {texto}
     </button>
   );
