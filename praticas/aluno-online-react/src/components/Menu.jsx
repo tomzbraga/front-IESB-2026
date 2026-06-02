@@ -1,22 +1,30 @@
+import { NavLink } from "react-router";
 
-function Menu({ navegaPara }) {
-    
-    return (
-
+function Menu() {
+  return (
     <nav className="mt-12 px-7">
-    
-        <ul className="list-disc space-y-8">
-          <li><a href="#" onClick={(e) => navegaPara(1)}>Dashboard</a></li>
-          <li><a href="#" onClick={(e) => navegaPara(2)}>Notas</a></li>
-          <li><a href="#" onClick={(e) => navegaPara(3)}>Faltas</a></li>
-          <li><a href="#" onClick={(e) => navegaPara(4)}>Boletos</a></li>
-          <li><a href="#" onClick={(e) => navegaPara(5)}>Requerimentos</a></li>
-          <li><a href="#" onClick={(e) => navegaPara(0)}>Sair</a></li>
-        </ul>
-    
+      <ul className="list-disc space-y-4 pl-5">
+        <li>
+          <NavLink to="/">Dashboard</NavLink>
+        </li>
+        <li>
+          <NavLink to="/faltas">Faltas</NavLink>
+        </li>
+        <li>
+          <NavLink to="/boletos">Boletos</NavLink>
+        </li>
+        <li>
+          <NavLink to="/notas">Notas</NavLink>
+        </li>
+        <li>
+          <NavLink to="/requerimentos">Requerimentos</NavLink>
+        </li>
+        <li>
+          <NavLink to="/login">Sair</NavLink>
+        </li>
+      </ul>
     </nav>
-
-    );
+  );
 }
 
 export default Menu;

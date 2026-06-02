@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import InputMatricula from "./InputMatricula";
 import InputSenha from "./InputSenha";
 import InputSubmit from "./InputSubmit";
 
-function FormLogin({ navegaPara }) {
+function FormLogin() {
   const [matricula, setMatricula] = useState("");
   const [matriculaErro, setMatriculaErro] = useState("");
   const [senha, setSenha] = useState("");
   const [senhaErro, setSenhaErro] = useState("");
+  const navigate = useNavigate();
 
   const trataSubmit = (e) => {
     e.preventDefault();
@@ -31,28 +33,27 @@ function FormLogin({ navegaPara }) {
     }
 
     if (valido) {
-      navegaPara(1);
+      // Navigate to Dashboard
+      navigate("/");
     }
   };
 
   return (
-    <>
-      <form onSubmit={trataSubmit}>
-        <InputMatricula
-          matricula={matricula}
-          erro={matriculaErro}
-          mudaValor={(e) => setMatricula(e.target.value)}
-        />
+    <form onSubmit={trataSubmit}>
+      <InputMatricula
+        matricula={matricula}
+        erro={matriculaErro}
+        mudaValor={(e) => setMatricula(e.target.value)}
+      />
 
-        <InputSenha
-          senha={senha}
-          erro={senhaErro}
-          mudaValor={(e) => setSenha(e.target.value)}
-        />
+      <InputSenha
+        senha={senha}
+        erro={senhaErro}
+        mudaValor={(e) => setSenha(e.target.value)}
+      />
 
-        <InputSubmit texto="Entrar" />
-      </form>
-    </>
+      <InputSubmit texto="Entrar" />
+    </form>
   );
 }
 
