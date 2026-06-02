@@ -7,10 +7,9 @@ function AuthProvider({ children }) {
   const [logado, setLogado] = useState(false);
 
   const login = (dados) => {
-
-    setUsuario({ dados });
+    // Chama a API do backend
+    setUsuario({ nome: "Jose" });
     setLogado(true);
-    
   };
 
   const logout = () => {
@@ -25,6 +24,7 @@ function AuthProvider({ children }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 function useAuth() {
   return useContext(AuthContext);
 }
