@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import { Outlet } from "react-router";
 import { useEffect } from "react";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuthContext } from "../contexts/AuthContext";
 import { useNavigate } from "react-router";
 
 function Layout() {
