@@ -1,15 +1,10 @@
-import { useForm } from "react-hook-form";
-
 function RequerimentoForm() {
-  return 
-  
+  return;
+
   <>
-
-   <select>
-    <option>teste</option>
-   </select>
-
+    <select>
+      <option>teste</option>
+    </select>
   </>;
-
 }
 export default RequerimentoForm;
