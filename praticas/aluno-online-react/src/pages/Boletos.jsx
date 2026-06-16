@@ -2,7 +2,7 @@ import Main from "../components/Main.jsx";
 import Sidebar from "../components/Sidebar.jsx";
 import Tabela from "../components/Tabela.jsx";
 
-function Boletos(props) {
+function Boletos() {
   const colunas = ["Vencimento", "Valor R$", "Situação"];
 
   const Boletos = [

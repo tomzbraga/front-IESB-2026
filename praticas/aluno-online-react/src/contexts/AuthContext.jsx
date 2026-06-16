@@ -6,7 +6,7 @@ function AuthProvider({ children }) {
   const [usuario, setUsuario] = useState({});
   const [logado, setLogado] = useState(false);
 
-  const login = (dados) => {
+  const login = () => {
     // Chama a API do backend
     setUsuario({ nome: "Jose" });
     setLogado(true);
@@ -24,8 +24,8 @@ function AuthProvider({ children }) {
   );
 }
 
-function useAuth() {
+function useAuthContext() {
   return useContext(AuthContext);
 }
 
-export { AuthProvider, useAuth };
+export { AuthProvider, useAuthContext };

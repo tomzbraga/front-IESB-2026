@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useAuth } from "../contexts/AuthContext"; // importa o hook
 import InputMatricula from "./InputMatricula";
 import InputSenha from "./InputSenha";
 import InputSubmit from "./InputSubmit";
@@ -10,6 +11,7 @@ function FormLogin() {
   const [senha, setSenha] = useState("");
   const [senhaErro, setSenhaErro] = useState("");
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const trataSubmit = (e) => {
     e.preventDefault();
@@ -33,7 +35,7 @@ function FormLogin() {
     }
 
     if (valido) {
-      // Navigate to Dashboard
+      login({ matricula });
       navigate("/");
     }
   };
@@ -52,7 +54,8 @@ function FormLogin() {
         mudaValor={(e) => setSenha(e.target.value)}
       />
 
-      <InputSubmit texto="Entrar" />
+      {/* passa a função como prop */}
+      <InputSubmit texto="Entrar" onClick={trataSubmit} />
     </form>
   );
 }

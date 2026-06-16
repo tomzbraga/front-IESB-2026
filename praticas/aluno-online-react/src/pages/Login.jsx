@@ -1,7 +1,7 @@
 import logo from "../assets/learn.svg";
 import FormLogin from "../components/FormLogin";
 
-function Login(props) {
+function Login() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 p-6">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
@@ -13,7 +13,7 @@ function Login(props) {
 
         <h1 className="font-bold text-2xl text-gray-800 mb-6">Aluno Online</h1>
 
-        <FormLogin navegaPara={props.navegaPara} />
+        <FormLogin />
       </div>
     </section>
   );

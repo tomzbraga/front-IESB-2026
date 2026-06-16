@@ -2,7 +2,7 @@ import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
-function Requerimentos(props) {
+function Requerimentos() {
   const colunas = ["Tipo de Requerimento", "Data de Solicitação", "Situação"];
 
   const Requerimentos = [
